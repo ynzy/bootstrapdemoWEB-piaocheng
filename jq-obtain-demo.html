@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<!-- <script src="./js/jquery.min.js"></script>//接入jquery包 -->
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+ <style>
+     body {
+         padding: 30px;
+     }
+     p {
+         height: 20px;
+         line-height: 20px;
+         background: rgb(163, 158, 158);
+     }
+ </style>
+<body>
+
+    <div class="layout">
+        <div class="input-text">
+            <div>
+                <span>姓名</span>
+                <input type="text" id="text-1">
+            </div>
+            <div>
+                <span>内容</span>
+                <textarea name="" id="text-2" cols="30" rows="10"></textarea>
+            </div>
+            <button id="btn">提交</button>
+        </div>
+        <div class="obtain-text">
+            <h2>显示留言</h2>
+            <div>
+                <p id="obtain-1"></p>
+            </div>
+            <div>
+                <p id="obtain-2"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript">
+//给提交按钮加入点击事件
+$(document).ready(function(e) {
+  //找到ID=btn的按钮加入一个click事件
+  $("#btn").click(function(){
+    //首先要找到文本域里面的值
+    var nt = $("#text-1").val();//取出用户在文本域里面输入的valuer值并且交给一个变量nt
+     
+    var str = nt;//在用户输入的内容后面追加换行
+    //把拼接好的字符串（nt+"<br>"）扔到最上方ID为nr的DIV里面去
+    $("#obtain-1").append(str); 
+       
+    })
+
+    $("#btn").click(function(){
+    //首先要找到文本域里面的值
+    var nt = $("#text-2").val();//取出用户在文本域里面输入的valuer值并且交给一个变量nt
+     
+    var str = nt;//在用户输入的内容后面追加换行
+    //把拼接好的字符串（nt+"<br>"）扔到最上方ID为nr的DIV里面去
+    $("#obtain-2").append(str); 
+       
+    })
+});
+ 
+ 
+</script>
+</html>
