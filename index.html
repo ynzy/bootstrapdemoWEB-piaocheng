@@ -28,13 +28,13 @@
                         <a href="#"><span class="glyphicon glyphicon-home"></span> 首页</a>
                     </li>
                     <li>
-                        <a href="#"><span class="glyphicon glyphicon-list"></span> 资讯</a>
+                        <a href="information.html"><span class="glyphicon glyphicon-list"></span> 资讯</a>
                     </li>
                     <li>
-                        <a href="#"><span class="glyphicon glyphicon-fire"></span> 案例</a>
+                        <a href="case.html"><span class="glyphicon glyphicon-fire"></span> 案例</a>
                     </li>
                     <li>
-                        <a href="#"><span class="glyphicon glyphicon-question-sign"></span> 关于</a>
+                        <a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> 关于</a>
                     </li>
                 </ul>
             </div>
@@ -143,14 +143,13 @@
     <div class="tab2">
         <div class="container">
             <div class="row">
-                <div class="text col-md-6 col-sm-6">
+                <div class=" col-md-6 col-sm-6 tab2-img">
+                    <img src="./images/tab2.png" class="auto img-responsive center-block" alt="">
+                </div>
+                <div class="text col-md-6 col-sm-6 tab2-text">
                     <h3>强大的学习体系</h3>
                     <p>经过管理学大师层层把关、让您的企业突飞猛进。</p>
                 </div>
-                <div class=" col-md-6 col-sm-6">
-                    <img src="./images/tab2.png" class="auto img-responsive center-block" alt="">
-                </div>
-
             </div>
         </div>
     </div>
@@ -197,16 +196,21 @@
         // });
         var imgheight = $('.auto').eq(0).height();
         var textheight = $('.text').eq(0).height();
-        $('.text').eq(0).css('margin-top',(imgheight-textheight)/2+'px');
+        $(window).load(function () {
+            $('.text').eq(0).css('margin-top', (imgheight - textheight) / 2 + 'px');
+        });  
         //响应式改变窗口大小函数执行变化
-        $(window).resize(function(){
-            $('.text').eq(0).css('margin-top',(imgheight-textheight)/2+'px');
+        $(window).resize(function () {
+            $('.text').eq(0).css('margin-top', (imgheight - textheight) / 2 + 'px');
         });
         var imgheight = $('.auto').eq(1).height();
         var textheight = $('.text').eq(1).height();
-        $('.text').eq(1).css('margin-top',(imgheight-textheight)/2+'px');
-        $(window).resize(function(){
-            $('.text').eq(1).css('margin-top',(imgheight-textheight)/2+'px');
+        $(window).load(function () {
+            $('.text').eq(1).css('margin-top', (imgheight - textheight) / 2 + 'px');
+        });
+        
+        $(window).resize(function () {
+            $('.text').eq(1).css('margin-top', (imgheight - textheight) / 2 + 'px');
         });
     </script>
 </body>
