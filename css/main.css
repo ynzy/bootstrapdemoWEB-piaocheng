@@ -62,6 +62,53 @@ UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
 .text p {
   font-size: 14px;
 }
+.jumbotron {
+  margin: 50px 0 0 0;
+  padding: 60px 0;
+  background: #ccc url('../images/bg.jpg');
+}
+.jumbotron h1 {
+  font-size: 26px;
+  padding: 0 0 0 20px;
+  color: #ccc;
+}
+.jumbotron h4 {
+  font-size: 16px;
+  padding: 0 0 0 20px;
+  color: #ccc;
+}
+.information {
+  background: #eee;
+  padding: 40px 0;
+}
+.info-content {
+  background: #fff;
+  margin: 0 0 20px 0;
+  box-shadow: 2px 2px 3px #ccc;
+}
+.info-content img {
+  margin: 12px 0;
+}
+.info-content h4 {
+  font-size: 14px;
+  padding: 2px 0 0 0;
+}
+.info-content p {
+  line-height: 1.6;
+  color: #666;
+}
+.info-right {
+  background: #fff;
+  box-shadow: 2px 2px 3px #ccc;
+}
+.info-right blockquote {
+  padding: 0;
+  margin: 0;
+}
+.info-right blockquote h2 {
+  font-size: 20px;
+  padding: 5px;
+}
 #footer {
   background-color: #eee;
   border-top: 1px solid #ccc;
@@ -83,6 +130,15 @@ UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
   .tab2-img {
     float: right;
   }
+  .jumbotron h1 {
+    font-size: 30px;
+  }
+  .jumbotron h4 {
+    font-size: 16px;
+  }
+  .info-content h4 {
+    font-size: 16px;
+  }
 }
 /* 中等屏幕（桌面显示器，大于等于992px） */
 @media (min-width: 992px) {
@@ -92,6 +148,18 @@ UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
   .tab-p {
     font-size: 17px;
   }
+  .jumbotron h1 {
+    font-size: 33px;
+  }
+  .jumbotron h4 {
+    font-size: 17px;
+  }
+  .info-content h4 {
+    font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 /* 大屏幕（大桌面显示器，大于等于1200px） */
 @media (min-width: 1200px) {
@@ -100,5 +168,17 @@ UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
   }
   .tab-p {
     font-size: 18px;
+  }
+  .jumbotron h1 {
+    font-size: 36px;
+  }
+  .jumbotron h4 {
+    font-size: 18px;
+  }
+  .info-content h4 {
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
