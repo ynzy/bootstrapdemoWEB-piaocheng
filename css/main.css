@@ -62,6 +62,7 @@ UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
 .text p {
   font-size: 14px;
 }
+/*资讯*/
 .jumbotron {
   margin: 50px 0 0 0;
   padding: 60px 0;
@@ -109,6 +110,46 @@ UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
   font-size: 20px;
   padding: 5px;
 }
+/*案例*/
+#case {
+  padding: 40px 0;
+  text-align: center;
+  background: #eee;
+}
+#case h4 {
+  color: #666;
+}
+#case p {
+  color: #666;
+  line-height: 1.6;
+}
+#case .col {
+  margin: 0 0 20px 0;
+}
+/*关于*/
+#about {
+  padding: 40px 15px;
+  background-color: #eee;
+}
+#about .about {
+  background-color: #fff;
+  box-shadow: 2px 2px 3px #ccc;
+  padding-bottom: 20px;
+}
+#about a {
+  color: #0059b2;
+}
+#about h3 {
+  margin: 0 0 10px 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 18px;
+}
+#about p {
+  line-height: 2;
+  font-size: 13px;
+}
+/*底部*/
 #footer {
   background-color: #eee;
   border-top: 1px solid #ccc;
